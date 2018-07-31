@@ -37,7 +37,7 @@ HWND hWnd = CreateWindowW(
 SetTimer(hWnd, 100, 100, NULL);
 ```
 
-2. Remove menu
+## Remove menu
 
 Modify the code from:
 
