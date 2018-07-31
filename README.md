@@ -4,7 +4,8 @@
 
 ## Remove window title bar and add timer 
 
-Modify the code below:
+Modify the code from:
+
 ``` c++
 HWND hWnd = CreateWindowW(
 	szWindowClass, 
@@ -17,6 +18,7 @@ HWND hWnd = CreateWindowW(
 ```
 
 to:
+
 ``` c++
 // create a window without title bar
 HWND hWnd = CreateWindowW(
@@ -31,9 +33,10 @@ HWND hWnd = CreateWindowW(
 SetTimer(hWnd, 100, 100, NULL);
 ```
 
-## Remove menu
+2. Remove menu
 
-Modify the code below:
+Modify the code from:
+
 ``` c++
 ATOM MyRegisterClass(HINSTANCE hInstance)
 {
@@ -44,6 +47,7 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
 ```
 
 to:
+
 ``` c++
 ATOM MyRegisterClass(HINSTANCE hInstance)
 {
@@ -56,6 +60,7 @@ ATOM MyRegisterClass(HINSTANCE hInstance)
 ## Add timer and paint procedure
 
 Modify the code from
+
 ``` c++
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
@@ -73,6 +78,7 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 ```
 
 to
+
 ``` c++
 LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 {
