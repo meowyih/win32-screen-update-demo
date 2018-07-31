@@ -135,9 +135,9 @@ VOID  OnPaint(HDC hdc)
   // directly draw on the buffer
   for (int i = 0; i < bufferSize; i = i + bytesPerPixel)
   {
-    buffer[i] = 0;     // RED
+    buffer[i] = 0;     // BLUE
     buffer[i + 1] = 0; // GREEN
-    buffer[i + 2] = 0; // BLUE
+    buffer[i + 2] = 0; // RED
   }
 
   // update the screen with buffer
