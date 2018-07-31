@@ -20,10 +20,10 @@ VOID  OnPaint(HDC hdc)
 	//
 	// allocate pixel buffer for drawing
 	//
-	// NOTE: this is BAD practice that should only exist in 
+	// NOTE: this is BAD practice that should only exist for 
 	//       demo purpose, in real case, programmer should
 	//       allocate buffer only once if the window size
-	//       is same as before
+	//       remains same as before
 	LONG bufferSize = width * height * bytesPerPixel;
 	BYTE* buffer = new BYTE[bufferSize];
 
