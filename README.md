@@ -1,6 +1,6 @@
 # Sample code shows how to refresh screen using memory buffer directly in win32
 
-Win32 provides HDC/GDI+ to let developer to draw the Window. However, the performance is not acceptable if you are developing a game with 30fps or 60fps. In that case, draw and update on the memory directly is a requirement. I wrote this simple demo shows how to do it.
+Win32 provides HDC/GDI+ to let developer to draw the Window. However, the performance is not acceptable if you are developing a game with 30fps or 60fps. In that case, draw and update on the memory directly is a requirement. I wrote this simple demo to show how to do it.
 
 ## Create a standard win32 project using Visual studio
 
