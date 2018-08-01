@@ -121,14 +121,14 @@ VOID  OnPaint(HDC hdc)
   LONG width = structBitmapHeader.bmWidth;
   LONG height = structBitmapHeader.bmHeight;
   
-  // bits per pixel, normally it is 24 (3 bytes) or 32 (4 bytes)
+  // bits per pixel, it should be 24 (3 bytes) or 32 (4 bytes)
   WORD bytesPerPixel = structBitmapHeader.bmBitsPixel / 8;
 
   // allocate pixel buffer for drawing
   //
   // NOTE: this is BAD practice, programmer should
-  //       allocate buffer only once if the window size
-  //       remain the same.
+  //       reallocate buffer only once if the window size
+  //       changed
   LONG bufferSize = width * height * bytesPerPixel;
   BYTE* buffer = new BYTE[bufferSize];
 
